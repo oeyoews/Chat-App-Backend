@@ -4,16 +4,9 @@ console.log(process.env.SG_KEY);
 
 sgMail.setApiKey(process.env.SG_KEY);
 
-const sendSGMail = async ({
-  to,
-  sender,
-  subject,
-  html,
-  attachments,
-  text,
-}) => {
+const sendSGMail = async ({ to, sender, subject, html, attachments, text }) => {
   try {
-    const from = "shreyanshshah242@gmail.com";
+    const from = "2956398608@qq.com";
 
     const msg = {
       to: to, // Change to your recipient
@@ -24,7 +17,6 @@ const sendSGMail = async ({
       attachments,
     };
 
-    
     return sgMail.send(msg);
   } catch (error) {
     console.log(error);

@@ -80,7 +80,7 @@ exports.sendOTP = async (req, res, next) => {
 
   // TODO send mail
   mailService.sendEmail({
-    from: "shreyanshshah242@gmail.com",
+    from: "2956398608@qq.com",
     to: user.email,
     subject: "Verification OTP",
     html: otp(user.firstName, new_otp),
@@ -249,7 +249,7 @@ exports.forgotPassword = async (req, res, next) => {
     console.log(resetURL);
 
     mailService.sendEmail({
-      from: "shreyanshshah242@gmail.com",
+      from: "2956398608@qq.com",
       to: user.email,
       subject: "Reset Password",
       html: resetPassword(user.firstName, resetURL),
