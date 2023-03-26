@@ -76,6 +76,7 @@ exports.sendOTP = async (req, res, next) => {
 
   await user.save({ new: true, validateModifiedOnly: true });
 
+  // TODO comment this
   console.log(new_otp);
 
   // TODO send mail
