@@ -247,7 +247,7 @@ exports.forgotPassword = async (req, res, next) => {
     const resetURL = `http://localhost:3000/auth/new-password?token=${resetToken}`;
     // TODO => Send Email with this Reset URL to user's email address
 
-    console.log(resetURL);
+    console.log(`🚀 Current resetToken is ${resetToken}`);
 
     mailService.sendEmail({
       from: "2956398608@qq.com",
